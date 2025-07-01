@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AuthLayout from "../../components/layouts/AuthLayout";
-import Input from "../../components/inputs/input";
+import Input from "../../components/inputs/Input";
 import ProfilePhotoSelector from "../../components/inputs/ProfilePhotoSelector";
 import { Link } from "react-router-dom";
 import { validateEmail } from "../../utils/helper";
