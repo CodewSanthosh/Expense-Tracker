@@ -96,8 +96,9 @@ const SignUp = () => {
             image={profilePic}
             setImage={setProfilePic}></ProfilePhotoSelector>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
-            <Input
+          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 ">
+            <div className="col-span-2">
+               <Input
               className="w-[100px]"
               value={fullName}
               onChange={({ target }) => {
@@ -107,6 +108,9 @@ const SignUp = () => {
               placeholder="San"
               type="text"
             />
+            </div>
+           
+           <div className="col-span-2">
             <Input
               type="text"
               value={email}
@@ -114,6 +118,7 @@ const SignUp = () => {
               label="Email Address"
               placeholder="santhosh@example.com"
             />
+            </div>
 
             <div className="col-span-2">
               <Input
